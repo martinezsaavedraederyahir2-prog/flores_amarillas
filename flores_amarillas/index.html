@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página especial 💛</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Fondo de corazones */
+            background-image: url('corazones.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .contenido {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #e91e63;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            width: 250px;
+            margin-top: 15px;
+            border-radius: 15px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #e91e63;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Botón para música -->
+    <button onclick="document.getElementById('musica').play()">
+        Reproducir música 🎵
+    </button>
+
+    <!-- Audio -->
+    <audio id="musica" loop>
+        <source src="Floricienta  Flores Amarillas [Letra].mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Contenido -->
+    <div class="contenido">
+        <h1>Te amo mucho mi morenita hermosa. 💛</h1>
+        <p>Este detalle es para ti 💖</p>
+        <p>Eres muy especial ✨</p>
+
+        <img src="flor.jpg" alt="Flor amarilla">
+    </div>
+
+</body>
+</html>
